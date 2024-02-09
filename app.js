@@ -8,10 +8,7 @@ const app=express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://anna29:annababu23@cluster0.hfzaiis.mongodb.net/blogDb?retryWrites=true&w=majority",
-{
-    useNewUrlParser:true
-})
+mongoose.connect("mongodb+srv://anna29:annababu23@cluster0.hfzaiis.mongodb.net/blogDb?retryWrites=true&w=majority")
 
 app.use("/api/blog",signuprouter)
 
