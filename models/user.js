@@ -8,6 +8,7 @@ const signuprouter=mongoose.Schema(
     pincode:String,
     emailid:String,
     password:String
+  
 }
 )
-module.exports=mongoose.model("Blogg",signuprouter)
+module.exports=mongoose.model("Blog",signuprouter)
